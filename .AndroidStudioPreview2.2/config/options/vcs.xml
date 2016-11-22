@@ -6,8 +6,16 @@
           <option name="url" value="https://github.com/laxmannakka/ActivityExample.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/chhota89/BridgeLabzApp.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/ESHVAR289/Fundoo-Hr.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Desktop/AndroidApps" />
+    <option name="cloneParentDir" value="$USER_HOME$/Desktop" />
   </component>
 </application>

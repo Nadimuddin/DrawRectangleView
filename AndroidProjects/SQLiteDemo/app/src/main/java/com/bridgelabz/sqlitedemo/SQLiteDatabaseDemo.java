@@ -11,8 +11,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-/*This class is use to interacting with SQLite Database
-* and perform insert, delete, update & view database
+/*
+ * This class is use to interacting with SQLite Database
+ * and perform insert, delete, update & view database
  */
 public class SQLiteDatabaseDemo extends SQLiteOpenHelper
 {
@@ -121,28 +122,28 @@ public class SQLiteDatabaseDemo extends SQLiteOpenHelper
         ContentValues contentValues = new ContentValues();
 
         //put id to column1
-        contentValues.put(COL1,  id);
+        //contentValues.put(COL1,  id);
 
         //put name to column2
         contentValues.put(COL2, name);
 
         //put last name to column3
-        contentValues.put(COL3, lastName);
+        //contentValues.put(COL3, lastName);
 
         //put city to column4
-        contentValues.put(COL4, city);
+        //contentValues.put(COL4, city);
 
         /*
         * call update method of SQLiteDatabase class
         * which returns no. of rows updated
-         */
-        rowsAffected = sqLiteDatabase.update(TABLE_NAME, contentValues, COL1+" = ?", new String[] {id});
+        */
+        rowsAffected = sqLiteDatabase.update(TABLE_NAME, contentValues, COL1+" = "+id, null);
 
         return rowsAffected;
     }
 
     //method to perform delete operation
-    public int deleteData(String id)
+    protected int deleteData(String id)
     {
         //to get how many rows are deleted
         int rowsAffected;
@@ -155,6 +156,7 @@ public class SQLiteDatabaseDemo extends SQLiteOpenHelper
         * it returns no. of rows deleted
          */
         rowsAffected = sqLiteDatabase.delete(TABLE_NAME, COL1+" = ?", new String[] {id});
+
 
         return rowsAffected;
     }

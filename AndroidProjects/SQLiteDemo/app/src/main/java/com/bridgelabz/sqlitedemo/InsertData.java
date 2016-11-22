@@ -14,11 +14,11 @@ import android.widget.Toast;
 public class InsertData extends Dialog implements View.OnClickListener
 {
     //EditText to take input data from user
-    EditText mId, mName, mLastName, mCity;
+    private EditText mId, mName, mLastName, mCity;
 
     //button to insert data
-    Button mInsert;
-    Context mContext;
+    private Button mInsert;
+    private Context mContext;
 
     public InsertData(Context context)
     {
